@@ -1,5 +1,5 @@
 import React from 'react';
-import { Instagram } from 'lucide-react';
+import { FaInstagram } from 'react-icons/fa';
 
 import img1 from '../../assets/images/instagram/IMG-20260506-WA0058.jpg';
 import img2 from '../../assets/images/instagram/IMG-20260506-WA0083.jpg';
@@ -42,7 +42,7 @@ const Gallery = () => {
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-black/35 opacity-0 transition-opacity duration-400 flex items-center justify-center group-hover:opacity-100">
-                <Instagram size={24} className="text-white" />
+                <FaInstagram size={24} className="text-white" />
               </div>
             </div>
           ))}
@@ -55,7 +55,7 @@ const Gallery = () => {
             rel="noreferrer"
             className="inline-flex items-center gap-2.5 px-8 py-3.5 border border-charcoal text-charcoal rounded-full text-[0.78rem] tracking-[0.1em] uppercase font-medium transition-colors duration-300 hover:bg-charcoal hover:text-white"
           >
-            <Instagram size={16} /> Follow on Instagram
+            <FaInstagram size={16} /> Follow on Instagram
           </a>
         </div>
       </div>

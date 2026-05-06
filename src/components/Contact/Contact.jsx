@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Phone, Mail, Instagram, MessageCircle, MapPin, Loader2 } from 'lucide-react';
+import { Phone, Mail, MessageCircle, MapPin, Loader2 } from 'lucide-react';
+import { FaInstagram } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Contact = () => {
@@ -200,7 +201,7 @@ Looking forward to your response 😊`;
               </a>
               <a href="https://www.instagram.com/sri_and_shine?igsh=NXQ5dXNuaHBibTZv" className="flex items-center gap-4 p-[1.1rem_1.4rem] rounded-xl border border-border bg-white no-underline text-text text-[0.88rem] transition-all duration-300 hover:border-gold hover:-translate-y-1 hover:shadow-md shadow-sm group" target="_blank" rel="noreferrer">
                 <div className="w-10 h-10 rounded-full bg-cream flex items-center justify-center text-gold shrink-0 transition-transform duration-300 group-hover:scale-110">
-                  <Instagram size={18} />
+                  <FaInstagram size={18} />
                 </div>
                 <div>
                   <strong className="block text-[0.75rem] tracking-[0.08em] uppercase text-text-muted mb-[0.1rem] font-medium">Instagram</strong>

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Instagram, MessageCircle, Phone, Mail, MapPin } from 'lucide-react';
+import { MessageCircle, Phone, Mail, MapPin } from 'lucide-react';
+import { FaInstagram } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
 const Footer = () => {
@@ -64,7 +65,7 @@ const Footer = () => {
           <h4 className="text-[0.75rem] tracking-[0.2em] uppercase text-gold mb-6 font-medium">Connect</h4>
           <div className="flex gap-4">
             <a href="https://www.instagram.com/sri_and_shine?igsh=NXQ5dXNuaHBibTZv" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full border border-white/10 bg-white/5 flex items-center justify-center text-white/80 no-underline transition-all duration-300 hover:border-gold hover:text-gold hover:bg-gold/10 hover:shadow-[0_0_15px_rgba(201,169,110,0.4)] hover:scale-110">
-              <Instagram size={18} />
+              <FaInstagram size={18} />
             </a>
             <a href="https://wa.me/919042761497" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full border border-white/10 bg-white/5 flex items-center justify-center text-white/80 no-underline transition-all duration-300 hover:border-[#25D366] hover:text-[#25D366] hover:bg-[#25D366]/10 hover:shadow-[0_0_15px_rgba(37,211,102,0.4)] hover:scale-110">
               <MessageCircle size={18} />
