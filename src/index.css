@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Jost', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+  --font-cormorant: 'Cormorant Garamond', serif;
+  
+  --color-white: #FFFFFF;
+  --color-off-white: #FAF9F7;
+  --color-cream: #F5F0EA;
+  --color-blush: #E8C4B8;
+  --color-blush-light: #F2DDD5;
+  --color-blush-dark: #C49A8A;
+  --color-gold: #C9A96E;
+  --color-gold-light: #E8D5B0;
+  --color-charcoal: #1C1C1C;
+  --color-text: #2A2A2A;
+  --color-text-muted: #7A7A7A;
+  --color-border: #EDEBE8;
+
+  --shadow-soft: 0 10px 40px -10px rgba(0, 0, 0, 0.05);
+}
+
+@layer base {
+  body {
+    @apply bg-white text-text font-sans antialiased overflow-x-hidden;
+    scroll-behavior: smooth;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer utilities {
+  .gpu-accelerate {
+    transform: translateZ(0);
+    will-change: transform;
+  }
+
+  @keyframes float-slow {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  @keyframes scrollDown { 
+    0% { top: -40px; } 
+    100% { top: 100%; } 
+  }
+
+  @keyframes marqueeScroll { 
+    0% { transform: translateX(0); } 
+    100% { transform: translateX(-50%); } 
+  }
+
+  @keyframes testimonialsScroll { 
+    0% { transform: translateX(0); } 
+    100% { transform: translateX(-50%); } 
+  }
+
+  @keyframes pulse-shadow {
+    0%, 100% { box-shadow: 0 6px 28px rgba(37,211,102,0.45); }
+    50% { box-shadow: 0 6px 40px rgba(37,211,102,0.7); }
+  }
+
+  .animate-float-slow {
+    animation: float-slow 6s ease-in-out infinite;
+  }
+
+  .animate-scrollDown {
+    animation: scrollDown 1.6s 1.8s infinite;
+  }
+
+  .animate-marqueeScroll {
+    animation: marqueeScroll 35s linear infinite;
+  }
+
+  @media (max-width: 768px) {
+    .animate-marqueeScroll {
+      animation: marqueeScroll 25s linear infinite;
+    }
+  }
+
+  .animate-testimonialsScroll {
+    animation: testimonialsScroll 35s linear infinite;
+  }
+
+  .animate-pulse-shadow {
+    animation: pulse-shadow 2.5s infinite;
+  }
+
+  @keyframes videoScroll { 
+    0% { transform: translateX(0); } 
+    100% { transform: translateX(-50%); } 
+  }
+
+  .animate-videoScroll {
+    animation: videoScroll 40s linear infinite;
+  }
+}
