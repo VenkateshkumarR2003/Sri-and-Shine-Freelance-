@@ -2,6 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Sparkles, Camera, Heart, Clock, Moon, Zap, ShieldCheck } from 'lucide-react';
 
+import partyImg from '../../assets/images/fashion and editorial/shoot (7).jpg';
+
 const Services = () => {
   // Scroll reveal variants
   const containerVariants = {
@@ -198,7 +200,7 @@ const Services = () => {
                 <div className="w-full sm:w-[40%] h-[180px] sm:h-auto overflow-hidden relative shrink-0">
                   <div className="absolute inset-0 bg-black/5 z-10 transition-colors group-hover:bg-transparent"></div>
                   <img 
-                    src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=500&q=80&fm=webp" 
+                    src={partyImg} 
                     alt="Party & Event" 
                     className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
                   />
