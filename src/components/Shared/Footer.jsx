@@ -99,7 +99,7 @@ const Footer = () => {
             Designed & Developed by
           </span>
           <a 
-            href="https://www.codiocrafts.com" 
+            href="https://www.instagram.com/codio_crafts?igsh=OHRycnNza3p6bG14" 
             target="_blank" 
             rel="noopener noreferrer"
             className="relative text-[0.75rem] font-medium tracking-wide cursor-pointer overflow-hidden"
