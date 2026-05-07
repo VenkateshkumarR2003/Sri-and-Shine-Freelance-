@@ -1,3 +1,5 @@
+import React from 'react';
+import { motion } from 'framer-motion';
 import { Sparkles, Camera, Heart, Clock, Moon, Zap, ShieldCheck } from 'lucide-react';
 
 import bridalImg from '../../assets/images/bridal/IMG-20260506-WA0037.jpg';
