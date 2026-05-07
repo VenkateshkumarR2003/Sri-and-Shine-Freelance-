@@ -6,34 +6,45 @@ import { X } from 'lucide-react';
 import video1 from '../../assets/images/videos/shoot (1).mp4';
 import video2 from '../../assets/images/videos/VID-20260506-WA0054.mp4';
 import video3 from '../../assets/images/videos/VID-20260506-WA0061.mp4';
-import video4 from '../../assets/images/videos/VID-20260506-WA0121.mp4';
-import video5 from '../../assets/images/videos/VID-20260506-WA0137.mp4';
-import video6 from '../../assets/images/videos/VID-20260506-WA0146.mp4';
-import video7 from '../../assets/images/videos/VID-20260506-WA0171.mp4';
-import video8 from '../../assets/images/videos/VID-20260506-WA0185.mp4';
-import video9 from '../../assets/images/videos/VID-20260506-WA0191.mp4';
+import video4 from '../../assets/images/videos/VID-20260506-WA0085.mp4';
+import video5 from '../../assets/images/videos/VID-20260506-WA0115.mp4';
+import video6 from '../../assets/images/videos/VID-20260506-WA0121.mp4';
+import video7 from '../../assets/images/videos/VID-20260506-WA0137.mp4';
+import video8 from '../../assets/images/videos/VID-20260506-WA0146.mp4';
+import video9 from '../../assets/images/videos/VID-20260506-WA0169.mp4';
+import video10 from '../../assets/images/videos/VID-20260506-WA0171.mp4';
+import video11 from '../../assets/images/videos/VID-20260506-WA0179.mp4';
+import video12 from '../../assets/images/videos/VID-20260506-WA0185.mp4';
+import video13 from '../../assets/images/videos/VID-20260506-WA0187.mp4';
+import video14 from '../../assets/images/videos/VID-20260506-WA0191.mp4';
 
-// Posters for faster perceived loading
+// Posters for faster perceived loading (using new confirmed images)
 import p1 from '../../assets/images/bridal/IMG-20260506-WA0037.jpg';
 import p2 from '../../assets/images/bridal/IMG-20260506-WA0108.jpg';
 import p3 from '../../assets/images/bridal/IMG-20260506-WA0123.jpg';
 import p4 from '../../assets/images/engagement/IMG-20260506-WA0063.jpg';
-import p5 from '../../assets/images/engagement/IMG-20260506-WA0140.jpg';
+import p5 from '../../assets/images/engagement/IMG-20260506-WA0083.jpg';
 import p6 from '../../assets/images/fashion and editorial/IMG-20260506-WA0166.jpg';
 import p7 from '../../assets/images/fashion and editorial/IMG-20260506-WA0172.jpg';
 import p8 from '../../assets/images/fashion and editorial/shoot (2).jpg';
 import p9 from '../../assets/images/fashion and editorial/shoot (4).jpg';
+import p10 from '../../assets/images/bridal/IMG-20260506-WA0154.jpg';
 
 const showcaseVideos = [
   { id: 1, src: video1, poster: p1, title: "Bridal Shoot", category: "Bridal", float: true },
   { id: 2, src: video2, poster: p2, title: "Soft Bridal Glow", category: "Bridal", float: false },
   { id: 3, src: video3, poster: p3, title: "Engagement Elegance", category: "Engagement", float: true },
-  { id: 4, src: video4, poster: p4, title: "Editorial Glam", category: "Fashion", float: false },
-  { id: 5, src: video5, poster: p5, title: "Party Ready", category: "Event", float: true },
-  { id: 6, src: video6, poster: p6, title: "Subtle Radiance", category: "Bridal", float: false },
-  { id: 7, src: video7, poster: p7, title: "Classic Beauty", category: "Bridal", float: true },
-  { id: 8, src: video8, poster: p8, title: "Modern Glamour", category: "Fashion", float: false },
-  { id: 9, src: video9, poster: p9, title: "Perfect Finish", category: "Event", float: true },
+  { id: 4, src: video4, poster: p4, title: "Gold Glam", category: "Bridal", float: false },
+  { id: 5, src: video5, poster: p5, title: "Regal Look", category: "Bridal", float: true },
+  { id: 6, src: video6, poster: p6, title: "Editorial Style", category: "Fashion", float: false },
+  { id: 7, src: video7, poster: p7, title: "Party Ready", category: "Event", float: true },
+  { id: 8, src: video8, poster: p8, title: "Modern Muse", category: "Fashion", float: false },
+  { id: 9, src: video9, poster: p9, title: "Night Out Glam", category: "Fashion", float: true },
+  { id: 10, src: video10, poster: p10, title: "Traditional Essence", category: "Bridal", float: false },
+  { id: 11, src: video11, poster: p1, title: "Radiant Beauty", category: "Bridal", float: true },
+  { id: 12, src: video12, poster: p2, title: "Fashion Forward", category: "Fashion", float: false },
+  { id: 13, src: video13, poster: p3, title: "Couture Glow", category: "Fashion", float: true },
+  { id: 14, src: video14, poster: p4, title: "Celebration Glam", category: "Event", float: false },
 ];
 
 const VideoShowcase = () => {

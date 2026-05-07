@@ -2,8 +2,9 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Sparkles, Camera, Heart, Clock, Moon, Zap, ShieldCheck } from 'lucide-react';
 
-import engImg from '../../assets/images/engagement/IMG-20260506-WA0063.jpg';
-import partyImg from '../../assets/images/fashion and editorial/shoot (7).jpg';
+// Premium Online Images
+const engImg = "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=800&q=80";
+const partyImg = "https://images.unsplash.com/photo-1526045431048-f857369aba09?w=800&q=80";
 
 const Services = () => {
   // Scroll reveal variants
@@ -162,7 +163,6 @@ const Services = () => {
                 <div className="w-full sm:w-[60%] p-6 lg:p-8 flex flex-col justify-center">
                   <div className="flex justify-between items-start mb-4">
                     <h3 className="font-serif text-[1.6rem] text-charcoal leading-tight">Engagement</h3>
-                    <div className="font-serif text-[1.1rem] text-gold mt-1">₹8k</div>
                   </div>
                   
                   <ul className="space-y-2.5 mb-6">
@@ -210,7 +210,6 @@ const Services = () => {
                 <div className="w-full sm:w-[60%] p-6 lg:p-8 flex flex-col justify-center">
                   <div className="flex justify-between items-start mb-4">
                     <h3 className="font-serif text-[1.6rem] text-charcoal leading-tight">Party & Event</h3>
-                    <div className="font-serif text-[1.1rem] text-gold mt-1">₹5k</div>
                   </div>
                   
                   <ul className="space-y-2.5 mb-6">

@@ -1,22 +1,26 @@
 import React from 'react';
 import { FaInstagram } from 'react-icons/fa';
 
-import img1 from '../../assets/images/instagram/IMG-20260506-WA0058.jpg';
-import img2 from '../../assets/images/instagram/IMG-20260506-WA0083.jpg';
-import img3 from '../../assets/images/instagram/IMG-20260506-WA0099.jpg';
-import img4 from '../../assets/images/instagram/IMG-20260506-WA0134.jpg';
-import img5 from '../../assets/images/instagram/IMG-20260506-WA0140.jpg';
-import img6 from '../../assets/images/instagram/IMG-20260506-WA0147.jpg';
-import img7 from '../../assets/images/instagram/IMG-20260506-WA0166.jpg';
-import img8 from '../../assets/images/instagram/IMG-20260506-WA0167.jpg';
-import img9 from '../../assets/images/instagram/IMG-20260506-WA0181.jpg';
-import img10 from '../../assets/images/instagram/IMG_4507.JPG';
-import img11 from '../../assets/images/instagram/photo (3).jpg';
-import img12 from '../../assets/images/instagram/photo (6).jpg';
+import img1 from '../../assets/images/instagram/1 (6).jpg';
+import img2 from '../../assets/images/instagram/1 (7).jpg';
+import img3 from '../../assets/images/instagram/IMG-20260506-WA0058.jpg';
+import img4 from '../../assets/images/instagram/IMG-20260506-WA0083.jpg';
+import img5 from '../../assets/images/instagram/IMG-20260506-WA0090.jpg';
+import img6 from '../../assets/images/instagram/IMG-20260506-WA0099.jpg';
+import img7 from '../../assets/images/instagram/IMG-20260506-WA0140.jpg';
+import img8 from '../../assets/images/instagram/IMG-20260506-WA0147.jpg';
+import img9 from '../../assets/images/instagram/IMG-20260506-WA0166.jpg';
+import img10 from '../../assets/images/instagram/IMG-20260506-WA0167.jpg';
+import img11 from '../../assets/images/instagram/IMG_3075.JPG';
+import img12 from '../../assets/images/instagram/IMG_3092.JPG';
+import img13 from '../../assets/images/instagram/IMG_3130.JPG';
+import img14 from '../../assets/images/instagram/IMG_4507.JPG';
+import img15 from '../../assets/images/instagram/photo (3).jpg';
+import img16 from '../../assets/images/instagram/photo (6).jpg';
 
 const Gallery = () => {
   const images = [
-    img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12
+    img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15, img16
   ];
 
   return (
