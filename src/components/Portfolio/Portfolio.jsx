@@ -1,48 +1,54 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 
-import img1 from '../../assets/images/transformations/1 (3).jpg';
-import img2 from '../../assets/images/transformations/1 (5).jpg';
-import img3 from '../../assets/images/transformations/1 (6).jpg';
-import img4 from '../../assets/images/transformations/1 (7).jpg';
-import img5 from '../../assets/images/transformations/IMG-20260506-WA0060.jpg';
-import img6 from '../../assets/images/transformations/IMG-20260506-WA0077.jpg';
-import img7 from '../../assets/images/transformations/IMG-20260506-WA0100.jpg';
-import img8 from '../../assets/images/transformations/IMG-20260506-WA0110.jpg';
-import img9 from '../../assets/images/transformations/IMG-20260506-WA0118.jpg';
-import img10 from '../../assets/images/transformations/IMG-20260506-WA0154.jpg';
-import img11 from '../../assets/images/transformations/IMG-20260506-WA0186.jpg';
-import img12 from '../../assets/images/transformations/photo (2).jpg';
-import img13 from '../../assets/images/transformations/photo (4).jpg';
-import img14 from '../../assets/images/transformations/port (4).JPG';
-import img15 from '../../assets/images/transformations/shoot (1).jpg';
-import img16 from '../../assets/images/transformations/shoot (15).jpg';
-import img17 from '../../assets/images/transformations/shoot (4).jpg';
+// Bridal Images
+import bridal1 from '../../assets/images/bridal/IMG-20260506-WA0037.jpg';
+import bridal2 from '../../assets/images/bridal/IMG-20260506-WA0108.jpg';
+import bridal3 from '../../assets/images/bridal/IMG-20260506-WA0123.jpg';
+import bridal4 from '../../assets/images/bridal/IMG-20260506-WA0131.jpg';
+import bridal5 from '../../assets/images/bridal/IMG-20260506-WA0154.jpg';
+import bridal6 from '../../assets/images/bridal/IMG_3135.JPG';
+
+// Engagement Images
+import eng1 from '../../assets/images/engagement/IMG-20260506-WA0063.jpg';
+import eng2 from '../../assets/images/engagement/IMG-20260506-WA0083.jpg';
+import eng3 from '../../assets/images/engagement/IMG-20260506-WA0094.jpg';
+import eng4 from '../../assets/images/engagement/IMG-20260506-WA0106.jpg';
+import eng5 from '../../assets/images/engagement/IMG-20260506-WA0140.jpg';
+import eng6 from '../../assets/images/engagement/IMG-20260506-WA0183.jpg';
+
+// Editorial & Fashion Images
+import edit1 from '../../assets/images/fashion and editorial/IMG-20260506-WA0166.jpg';
+import edit2 from '../../assets/images/fashion and editorial/IMG-20260506-WA0167.jpg';
+import edit3 from '../../assets/images/fashion and editorial/IMG-20260506-WA0172.jpg';
+import edit4 from '../../assets/images/fashion and editorial/shoot (15).jpg';
+import edit5 from '../../assets/images/fashion and editorial/shoot (2).jpg';
+import edit6 from '../../assets/images/fashion and editorial/shoot (4).jpg';
 
 const portfolioData = [
   // Bridal
-  { id: 1, cat: 'bridal', img: img1, title: 'Royal Bridal Look', subtitle: 'Bridal', featured: true },
-  { id: 4, cat: 'bridal', img: img2, title: 'Ethereal Bride', subtitle: 'Bridal', featured: false },
-  { id: 7, cat: 'bridal', img: img3, title: 'Classic South Indian', subtitle: 'Bridal', featured: true },
-  { id: 10, cat: 'bridal', img: img4, title: 'Modern Bride', subtitle: 'Bridal', featured: true },
-  { id: 13, cat: 'bridal', img: img5, title: 'Elegant Bride', subtitle: 'Bridal', featured: false },
-  { id: 16, cat: 'bridal', img: img6, title: 'Traditional Glam', subtitle: 'Bridal', featured: false },
+  { id: 1, cat: 'bridal', img: bridal1, title: 'Royal Bridal Look', subtitle: 'Bridal', featured: true },
+  { id: 4, cat: 'bridal', img: bridal2, title: 'Ethereal Bride', subtitle: 'Bridal', featured: false },
+  { id: 7, cat: 'bridal', img: bridal3, title: 'Classic South Indian', subtitle: 'Bridal', featured: true },
+  { id: 10, cat: 'bridal', img: bridal4, title: 'Modern Bride', subtitle: 'Bridal', featured: true },
+  { id: 13, cat: 'bridal', img: bridal5, title: 'Elegant Bride', subtitle: 'Bridal', featured: false },
+  { id: 16, cat: 'bridal', img: bridal6, title: 'Traditional Glam', subtitle: 'Bridal', featured: false },
 
   // Engagement
-  { id: 2, cat: 'engagement', img: img7, title: 'Golden Engagement', subtitle: 'Engagement', featured: true },
-  { id: 5, cat: 'engagement', img: img8, title: 'Soft Glam', subtitle: 'Engagement', featured: false },
-  { id: 8, cat: 'engagement', img: img9, title: 'Bold & Beautiful', subtitle: 'Engagement', featured: true },
-  { id: 11, cat: 'engagement', img: img10, title: 'Radiant Glow', subtitle: 'Engagement', featured: true },
-  { id: 14, cat: 'engagement', img: img11, title: 'Subtle Elegance', subtitle: 'Engagement', featured: false },
-  { id: 17, cat: 'engagement', img: img12, title: 'Modern Muse', subtitle: 'Engagement', featured: false },
+  { id: 2, cat: 'engagement', img: eng1, title: 'Golden Engagement', subtitle: 'Engagement', featured: true },
+  { id: 5, cat: 'engagement', img: eng2, title: 'Soft Glam', subtitle: 'Engagement', featured: false },
+  { id: 8, cat: 'engagement', img: eng3, title: 'Bold & Beautiful', subtitle: 'Engagement', featured: true },
+  { id: 11, cat: 'engagement', img: eng4, title: 'Radiant Glow', subtitle: 'Engagement', featured: true },
+  { id: 14, cat: 'engagement', img: eng5, title: 'Subtle Elegance', subtitle: 'Engagement', featured: false },
+  { id: 17, cat: 'engagement', img: eng6, title: 'Modern Muse', subtitle: 'Engagement', featured: false },
 
-  // Party
-  { id: 3, cat: 'party', img: img13, title: 'Evening Glam', subtitle: 'Party', featured: true },
-  { id: 6, cat: 'party', img: img14, title: 'Luxe Party Look', subtitle: 'Party', featured: false },
-  { id: 9, cat: 'party', img: img15, title: 'Dewy Finish', subtitle: 'Party', featured: true },
-  { id: 12, cat: 'party', img: img16, title: 'Festive Ready', subtitle: 'Party', featured: true },
-  { id: 15, cat: 'party', img: img17, title: 'Event Glam', subtitle: 'Party', featured: false },
-  { id: 18, cat: 'party', img: img8, title: 'Night Out Glam', subtitle: 'Party', featured: false },
+  // Editorial & Fashion
+  { id: 3, cat: 'editorial', img: edit1, title: 'Evening Glam', subtitle: 'Editorial & Fashion', featured: true },
+  { id: 6, cat: 'editorial', img: edit2, title: 'Luxe Fashion Look', subtitle: 'Editorial & Fashion', featured: false },
+  { id: 9, cat: 'editorial', img: edit3, title: 'Dewy Finish', subtitle: 'Editorial & Fashion', featured: true },
+  { id: 12, cat: 'editorial', img: edit4, title: 'Festive Ready', subtitle: 'Editorial & Fashion', featured: true },
+  { id: 15, cat: 'editorial', img: edit5, title: 'Event Glam', subtitle: 'Editorial & Fashion', featured: false },
+  { id: 18, cat: 'editorial', img: edit6, title: 'Night Out Glam', subtitle: 'Editorial & Fashion', featured: false },
 ];
 
 const Portfolio = () => {
@@ -107,7 +113,7 @@ const Portfolio = () => {
         </motion.div>
 
         <div className="flex justify-center flex-wrap gap-2 mb-10">
-          {['bridal', 'engagement', 'party'].map(tab => (
+          {['bridal', 'engagement', 'editorial'].map(tab => (
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
@@ -117,7 +123,7 @@ const Portfolio = () => {
                   : 'bg-transparent text-text-muted border-border hover:border-gold hover:text-gold'
               }`}
             >
-              {tab.charAt(0).toUpperCase() + tab.slice(1)}
+              {tab === 'editorial' ? 'Editorial & Fashion' : tab.charAt(0).toUpperCase() + tab.slice(1)}
             </button>
           ))}
         </div>
@@ -131,7 +137,7 @@ const Portfolio = () => {
               <img 
                 src={item.img} 
                 alt={item.title} 
-                className={`w-full object-cover transition-transform duration-600 ease-[ease] group-hover:scale-105 block ${item.featured ? 'h-[280px] lg:h-[576px]' : 'h-[280px]'}`} 
+                className={`w-full object-cover object-top transition-transform duration-600 ease-[ease] group-hover:scale-105 block ${item.featured ? 'h-[320px] lg:h-[660px]' : 'h-[320px]'}`} 
                 loading="lazy" 
                 decoding="async"
               />

@@ -119,7 +119,7 @@ const Services = () => {
 
                   <div className="font-serif text-[1.4rem] text-gold-light mb-8">
                     <span className="text-[0.8rem] font-sans text-white/50 uppercase tracking-widest mr-2">From</span> 
-                    ₹8,000
+                    ₹10,000
                   </div>
 
                   <a 
@@ -159,7 +159,7 @@ const Services = () => {
                 <div className="w-full sm:w-[60%] p-6 lg:p-8 flex flex-col justify-center">
                   <div className="flex justify-between items-start mb-4">
                     <h3 className="font-serif text-[1.6rem] text-charcoal leading-tight">Engagement</h3>
-                    <div className="font-serif text-[1.1rem] text-gold mt-1">₹5k</div>
+                    <div className="font-serif text-[1.1rem] text-gold mt-1">₹8k</div>
                   </div>
                   
                   <ul className="space-y-2.5 mb-6">
@@ -207,7 +207,7 @@ const Services = () => {
                 <div className="w-full sm:w-[60%] p-6 lg:p-8 flex flex-col justify-center">
                   <div className="flex justify-between items-start mb-4">
                     <h3 className="font-serif text-[1.6rem] text-charcoal leading-tight">Party & Event</h3>
-                    <div className="font-serif text-[1.1rem] text-gold mt-1">₹3k</div>
+                    <div className="font-serif text-[1.1rem] text-gold mt-1">₹5k</div>
                   </div>
                   
                   <ul className="space-y-2.5 mb-6">

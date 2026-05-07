@@ -168,7 +168,7 @@ Looking forward to your response 😊`;
               "Every face tells a story — let’s make yours unforgettable."
             </p>
             <p className="text-[0.95rem] text-text-muted leading-[1.8] mb-6">
-              ✨ 300+ brides styled &bull; Trusted across Tamil Nadu
+              ✨ 30+ brides styled &bull; Trusted across Tamil Nadu
             </p>
 
             <div className="flex flex-col gap-4">

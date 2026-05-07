@@ -4,15 +4,22 @@ import video1 from '../../assets/images/hero/10835749-hd_1920_1080_25fps.mp4';
 import video2 from '../../assets/images/hero/13613681_3840_2160_25fps.mp4';
 import video3 from '../../assets/images/hero/3971844-hd_1920_1080_25fps.mp4';
 
+// Optimization: Poster images show instantly while videos load in the background
+import poster1 from '../../assets/images/bridal/IMG-20260506-WA0037.jpg';
+import poster2 from '../../assets/images/fashion and editorial/IMG-20260506-WA0166.jpg';
+import poster3 from '../../assets/images/engagement/IMG-20260506-WA0063.jpg';
+
 const slides = [
   {
     video: video1,
+    poster: poster1,
     subtitle: "Chennai & All Over Tamil Nadu",
     title: <>Bridal <em className="italic text-blush-light">Makeup</em><br />Artist</>,
     desc: "Transforming brides into timeless visions of elegance — every stroke, a masterpiece."
   },
   {
     video: video2,
+    poster: poster2,
     subtitle: "Premium & Luxury",
     title: <>Editorial <em className="italic text-blush-light">Fashion</em><br />Glam</>,
     desc: "High-end editorial styling for magazines, shoots, and red carpets."

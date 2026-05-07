@@ -3,7 +3,6 @@ import Navbar from './components/Shared/Navbar';
 import Hero from './components/Hero/Hero';
 import BrandMarquee from './components/BrandMarquee/BrandMarquee';
 import Portfolio from './components/Portfolio/Portfolio';
-import Transformation from './components/Transformation/Transformation';
 import VideoShowcase from './components/VideoShowcase/VideoShowcase';
 import Services from './components/Services/Services';
 import About from './components/About/About';
@@ -29,7 +28,6 @@ function App() {
         <Hero />
         <BrandMarquee />
         <Portfolio />
-        <Transformation />
         <VideoShowcase />
         <Services />
         <About />

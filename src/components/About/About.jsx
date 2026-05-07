@@ -14,7 +14,7 @@ const About = () => {
           <div className="relative">
             <img 
               src={mainImg} 
-              alt="Sridharani — Makeup Artist" 
+              alt="Gunasekaran — Makeup Artist" 
               className="w-full h-[400px] lg:h-[580px] object-cover rounded-2xl shadow-[0_24px_64px_rgba(0,0,0,0.12)] block"
               loading="lazy"
             />
@@ -25,7 +25,7 @@ const About = () => {
               loading="lazy"
             />
             <div className="hidden md:block absolute top-8 -left-6 bg-charcoal text-white p-4 rounded-xl shadow-[0_10px_30px_rgba(0,0,0,0.2)] text-center min-w-[120px] animate-float-slow [animation-delay:1s]">
-              <strong className="block font-serif text-[1.8rem] text-gold mb-1 leading-none">7+</strong>
+              <strong className="block font-serif text-[1.8rem] text-gold mb-1 leading-none">2+</strong>
               <span className="text-[0.7rem] tracking-[0.1em] uppercase text-white/60 leading-tight">Years of<br/>Experience</span>
             </div>
             {/* Floating Quote */}
@@ -44,7 +44,7 @@ const About = () => {
               ✦ My Story
             </span>
             <h2 className="text-[clamp(2rem,4vw,3.2rem)] font-normal leading-[1.15] text-charcoal font-serif">
-              Meet <em className="italic text-blush-dark">Sridharani</em>
+              Meet <em className="italic text-blush-dark">Gunasekaran</em>
             </h2>
             <div className="w-[40px] h-[1px] bg-gold mt-[1.4rem] mb-[2.4rem]"></div>
             
@@ -64,20 +64,20 @@ const About = () => {
 
             {/* Signature Image Placeholder - using a cursive font as a fallback if no image */}
             <div className="font-cormorant italic text-3xl text-charcoal mb-6">
-              Sridharani
+              Sridharani Gunasekaran
             </div>
 
             {/* Stats */}
             <div className="flex gap-10 mt-10 flex-wrap pt-8 border-t border-border">
               <div className="text-left">
                 <div className="font-serif text-[2.2rem] text-charcoal leading-none mb-1">
-                  300<span className="text-gold">+</span>
+                  30<span className="text-gold">+</span>
                 </div>
                 <div className="text-[0.72rem] tracking-[0.1em] uppercase text-text-muted mt-1">Happy Clients</div>
               </div>
               <div className="text-left">
                 <div className="font-serif text-[2.2rem] text-charcoal leading-none mb-1">
-                  7<span className="text-gold">+</span>
+                  2<span className="text-gold">+</span>
                 </div>
                 <div className="text-[0.72rem] tracking-[0.1em] uppercase text-text-muted mt-1">Years Experience</div>
               </div>
