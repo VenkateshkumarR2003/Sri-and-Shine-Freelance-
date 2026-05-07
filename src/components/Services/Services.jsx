@@ -2,10 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Sparkles, Camera, Heart, Clock, Moon, Zap, ShieldCheck } from 'lucide-react';
 
-import bridalImg from '../../assets/images/bridal/IMG-20260506-WA0037.jpg';
-import engImg from '../../assets/images/engagement/IMG-20260506-WA0063.jpg';
-import partyImg from '../../assets/images/fashion and editorial/IMG-20260506-WA0166.jpg';
-
 const Services = () => {
   // Scroll reveal variants
   const containerVariants = {
@@ -94,10 +90,9 @@ const Services = () => {
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#1a1a1a] z-10 hidden md:block"></div>
                   <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a] to-transparent z-10 md:hidden"></div>
                   <img 
-                    src={bridalImg} 
+                    src="https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80&fm=webp" 
                     alt="Bridal Makeup" 
                     className="w-full h-full object-cover opacity-90 transition-transform duration-700 hover:scale-105"
-                    loading="lazy"
                   />
                 </div>
 
@@ -155,10 +150,9 @@ const Services = () => {
                 <div className="w-full sm:w-[40%] h-[180px] sm:h-auto overflow-hidden relative shrink-0">
                   <div className="absolute inset-0 bg-black/5 z-10 transition-colors group-hover:bg-transparent"></div>
                   <img 
-                    src={engImg} 
+                    src="https://images.unsplash.com/photo-1526413232644-8a40f03cc03b?w=500&q=80&fm=webp" 
                     alt="Engagement Look" 
                     className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
-                    loading="lazy"
                   />
                 </div>
 
@@ -204,10 +198,9 @@ const Services = () => {
                 <div className="w-full sm:w-[40%] h-[180px] sm:h-auto overflow-hidden relative shrink-0">
                   <div className="absolute inset-0 bg-black/5 z-10 transition-colors group-hover:bg-transparent"></div>
                   <img 
-                    src={partyImg} 
+                    src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=500&q=80&fm=webp" 
                     alt="Party & Event" 
                     className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
-                    loading="lazy"
                   />
                 </div>
 
