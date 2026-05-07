@@ -16,7 +16,7 @@ const About = () => {
               src={mainImg} 
               alt="Gunasekaran — Makeup Artist" 
               className="w-full h-[400px] lg:h-[580px] object-cover rounded-2xl shadow-[0_24px_64px_rgba(0,0,0,0.12)] block"
-              loading="lazy"
+              loading="eager"
             />
             <img 
               src={floatingImg} 

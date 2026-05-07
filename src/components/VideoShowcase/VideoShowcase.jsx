@@ -13,16 +13,27 @@ import video7 from '../../assets/images/videos/VID-20260506-WA0171.mp4';
 import video8 from '../../assets/images/videos/VID-20260506-WA0185.mp4';
 import video9 from '../../assets/images/videos/VID-20260506-WA0191.mp4';
 
+// Posters for faster perceived loading
+import p1 from '../../assets/images/bridal/IMG-20260506-WA0037.jpg';
+import p2 from '../../assets/images/bridal/IMG-20260506-WA0108.jpg';
+import p3 from '../../assets/images/bridal/IMG-20260506-WA0123.jpg';
+import p4 from '../../assets/images/engagement/IMG-20260506-WA0063.jpg';
+import p5 from '../../assets/images/engagement/IMG-20260506-WA0140.jpg';
+import p6 from '../../assets/images/fashion and editorial/IMG-20260506-WA0166.jpg';
+import p7 from '../../assets/images/fashion and editorial/IMG-20260506-WA0172.jpg';
+import p8 from '../../assets/images/fashion and editorial/shoot (2).jpg';
+import p9 from '../../assets/images/fashion and editorial/shoot (4).jpg';
+
 const showcaseVideos = [
-  { id: 1, src: video1, title: "Bridal Shoot", category: "Bridal", float: true },
-  { id: 2, src: video2, title: "Soft Bridal Glow", category: "Bridal", float: false },
-  { id: 3, src: video3, title: "Engagement Elegance", category: "Engagement", float: true },
-  { id: 4, src: video4, title: "Editorial Glam", category: "Fashion", float: false },
-  { id: 5, src: video5, title: "Party Ready", category: "Event", float: true },
-  { id: 6, src: video6, title: "Subtle Radiance", category: "Bridal", float: false },
-  { id: 7, src: video7, title: "Classic Beauty", category: "Bridal", float: true },
-  { id: 8, src: video8, title: "Modern Glamour", category: "Fashion", float: false },
-  { id: 9, src: video9, title: "Perfect Finish", category: "Event", float: true },
+  { id: 1, src: video1, poster: p1, title: "Bridal Shoot", category: "Bridal", float: true },
+  { id: 2, src: video2, poster: p2, title: "Soft Bridal Glow", category: "Bridal", float: false },
+  { id: 3, src: video3, poster: p3, title: "Engagement Elegance", category: "Engagement", float: true },
+  { id: 4, src: video4, poster: p4, title: "Editorial Glam", category: "Fashion", float: false },
+  { id: 5, src: video5, poster: p5, title: "Party Ready", category: "Event", float: true },
+  { id: 6, src: video6, poster: p6, title: "Subtle Radiance", category: "Bridal", float: false },
+  { id: 7, src: video7, poster: p7, title: "Classic Beauty", category: "Bridal", float: true },
+  { id: 8, src: video8, poster: p8, title: "Modern Glamour", category: "Fashion", float: false },
+  { id: 9, src: video9, poster: p9, title: "Perfect Finish", category: "Event", float: true },
 ];
 
 const VideoShowcase = () => {
@@ -87,11 +98,15 @@ const VideoShowcase = () => {
                 >
                   <video
                     src={video.src}
+                    poster={video.poster}
                     autoPlay
                     muted
                     loop
                     playsInline
-                    preload="metadata"
+                    preload="auto"
+                    disablePictureInPicture
+                    controlsList="nodownload"
+                    onCanPlay={(e) => e.target.play()}
                     className="w-full h-full object-cover scale-105 group-hover:scale-[1.08] transition-transform duration-700 ease-out"
                   ></video>
 
