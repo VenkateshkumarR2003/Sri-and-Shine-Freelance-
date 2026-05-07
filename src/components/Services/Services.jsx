@@ -4,7 +4,7 @@ import { Sparkles, Camera, Heart, Clock, Moon, Zap, ShieldCheck } from 'lucide-r
 
 // Premium Online Images
 const engImg = "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=800&q=80";
-const partyImg = "https://images.unsplash.com/photo-1526045431048-f857369aba09?w=800&q=80";
+const partyImg = "https://images.pexels.com/photos/2533266/pexels-photo-2533266.jpeg?auto=compress&cs=tinysrgb&w=800";
 
 const Services = () => {
   // Scroll reveal variants
