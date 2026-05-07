@@ -98,4 +98,13 @@
   .animate-videoScroll {
     animation: videoScroll 40s linear infinite;
   }
+
+  @keyframes shimmer {
+    0% { background-position: 100% 0; }
+    100% { background-position: -100% 0; }
+  }
+
+  .animate-shimmer {
+    animation: shimmer 4s linear infinite;
+  }
 }

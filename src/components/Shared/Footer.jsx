@@ -1,5 +1,5 @@
 import React from 'react';
-import { MessageCircle, Phone, Mail, MapPin } from 'lucide-react';
+import { MessageCircle, Phone, Mail, MapPin, Code } from 'lucide-react';
 import { FaInstagram } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
@@ -80,11 +80,36 @@ const Footer = () => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8, delay: 0.4 }}
-        className="max-w-[1280px] mx-auto mt-16 pt-6 border-t border-white/10 text-center"
+        className="max-w-[1280px] mx-auto mt-16 pt-8 border-t border-white/5 text-center"
       >
-        <p className="text-[0.8rem] text-white/40 tracking-[0.05em] uppercase font-medium">
-          &copy; 2026 Sri and Shine Makeovers. All rights reserved.
+        <p className="text-[0.7rem] text-white/40 tracking-[0.05em] uppercase font-medium mb-4">
+          &copy; {new Date().getFullYear()} Sri and Shine Makeovers. All rights reserved.
         </p>
+
+        {/* Developer Credit */}
+        <motion.div 
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+          className="flex items-center justify-center gap-2 group"
+        >
+          <Code size={12} className="text-gold/40 group-hover:text-gold transition-colors duration-500" />
+          <span className="text-[0.75rem] text-white/30 font-light tracking-wider">
+            Designed & Developed by
+          </span>
+          <a 
+            href="https://www.codiocrafts.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="relative text-[0.75rem] font-medium tracking-wide cursor-pointer overflow-hidden"
+          >
+            <span className="bg-gradient-to-r from-[#d4af37] via-[#f1d592] to-[#d4af37] bg-clip-text text-transparent bg-[length:200%_auto] animate-shimmer group-hover:drop-shadow-[0_0_8px_rgba(212,175,55,0.4)] transition-all duration-500">
+              Codio Crafts
+            </span>
+            <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-gold/50 transition-all duration-500 group-hover:w-full"></span>
+          </a>
+        </motion.div>
       </motion.div>
     </footer>
   );
